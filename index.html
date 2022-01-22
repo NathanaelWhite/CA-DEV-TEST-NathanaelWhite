@@ -4,40 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/css/style.css" />
     <title>Training App</title>
   </head>
   <body>
-    <header class="header">
-      <div class="hero">
-        <!-- carousel images -->
-        <div class="carousel-img active">
-          <img
-            src="https://via.placeholder.com/500x200"
-            alt="training"
-            style="width: 100%"
-          />
-        </div>
-        <div class="carousel-img">
-          <img
-            src="https://via.placeholder.com/500x200"
-            alt="training"
-            style="width: 100%"
-          />
-        </div>
-        <div class="carousel-img">
-          <img
-            src="https://via.placeholder.com/500x200"
-            alt="training"
-            style="width: 100%"
-          />
-        </div>
-        <!-- carousel buttons -->
-        <ul class="carousel-btns">
-          <li class="carousel-btn" onclick="displaySlide(1)"></li>
-          <li class="carousel-btn" onclick="displaySlide(2)"></li>
-          <li class="carousel-btn" onclick="displaySlide(3)"></li>
-        </ul>
+    <section class="hero">
+      <!-- carousel images -->
+      <div class="carousel-img">
+        <img src="./src//assets/images/barbell.jpg" alt="barbell" />
       </div>
-    </header>
+      <div class="carousel-img">
+        <img src="./src/assets/images/ropes.jpg" alt="ropes" />
+      </div>
+      <div class="carousel-img">
+        <img src="./src/assets/images/treadmill.jpg" alt="treadmill" />
+      </div>
+      <!-- carousel buttons -->
+      <div class="carousel-btns">
+        <span class="carousel-btn" onclick="currentImg(1)"></span>
+        <span class="carousel-btn" onclick="currentImg(2)"></span>
+        <span class="carousel-btn" onclick="currentImg(3)"></span>
+      </div>
+    </section>
+
+    <div class="card-container">
+      <div class="card">
+        <img class="card-img" src="./src/assets/images/starting.jpg" alt="starting">
+        <div class="card-contents">
+          <h3>Get Started</h3>
+          <p>Start Your Journey Now!</p>
+          <button type="button" class="card-btn" href="#">More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src="./src/assets/images/coaching.jpg" alt="coaching">
+        <div class="card-contents">
+          <h3>Our Team</h3>
+          <p>Meet the team!</p>
+          <button type="button" class="card-btn" href="#">More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src="./src/assets/images/dumbells.jpg" alt="dumbells">
+        <div class="card-contents">
+          <h3>Testimonials/FAQ</h3>
+          <p>Frequently Asked Questions</p>
+          <button type="button" class="card-btn" href="#">More</button>
+        </div>
+      </div>
+
+    </div>
+    <script src="./src/assets/js/script.js"></script>
   </body>
 </html>
