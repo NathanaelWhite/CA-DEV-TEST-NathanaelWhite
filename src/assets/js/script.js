@@ -9,7 +9,7 @@ function currentImg(imgNum) {
 function displaySlides(imgNum) {
   let images = document.getElementsByClassName("carousel-img");
   let buttons = document.getElementsByClassName("carousel-btn");
-    // loops over the images and 'hides' the styling
+  // loops over the images and 'hides' the styling
   for (i = 0; i < images.length; i++) {
     images[i].style.display = "none";
   }
